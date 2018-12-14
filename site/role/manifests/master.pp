@@ -1,3 +1,4 @@
-class role::master {
-  include profile::r10k
+class role::webserver {
+  # include profile::base
+  include profile::apache
 }
