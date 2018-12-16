@@ -9,9 +9,9 @@ node 'puppet.c.imperial-vector-192007.internal' {
 }
 
 node 'pph-win10-vm.socal.rr.com' {
-  user{ 'IEUser':
-    ensure => 'present',
-    password => 'JustATest1234',
+  file { 'c:\temp\hello.txt':  
+    ensure  => file,
+    content => "hello, world\n",
   }
 }
 
